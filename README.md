@@ -25,7 +25,7 @@ Dê dois cliques em `index.html`. As fontes vêm do Google Fonts, então é prec
 
 ## Revisar antes de divulgar (5 minutos)
 
-1. **Confirme a região:** o site diz “Campinas e região” em vários pontos. Se o atendimento for outra cidade, use Localizar e Substituir por “Sua Cidade e região”.
+1. **Confirme a região:** o site diz “Jundiaí e região” em vários pontos. Se o atendimento for outra cidade, use Localizar e Substituir por “Sua Cidade e região”.
 2. **Confira o telefone:** o número aparece como `(19) 98356-4986` (visível) e `5519983564986` (links). Troque os dois formatos em todo o arquivo se necessário.
 3. **Ajuste o que for combinado com o Robson:** o site não promete preço, prazo, garantia, horário de atendimento nem formas de pagamento. Se quiser incluir, acrescente apenas informações confirmadas.
 4. **Não invente avaliações ou números.** A página foi escrita sem depoimentos falsos; a confiança vem do atendimento real.
@@ -76,7 +76,7 @@ O site sozinho não sustenta a presença. A sequência que funciona é esta:
 - Foto: use a mesma identidade do site (fundo escuro, monograma ou foto do Robson).
 - Descrição (copie e cole):
 
-  > Elétrica, hidráulica e pequenos reparos em Campinas e região. Tomadas, chuveiros, torneiras, vazamentos, desentupimento e mais. Orçamento sem compromisso pelo WhatsApp.
+  > Elétrica, hidráulica e pequenos reparos em Jundiaí e região. Tomadas, chuveiros, torneiras, vazamentos, desentupimento e mais. Orçamento sem compromisso pelo WhatsApp.
 
 - Cadastre os serviços no **catálogo** (sem preço, se preferir): Elétrica, Hidráulica, Pequenos reparos.
 - Crie **respostas rápidas**:
@@ -94,7 +94,7 @@ O site sozinho não sustenta a presença. A sequência que funciona é esta:
 
 1. Acesse <https://business.google.com> e crie o perfil.
 2. Categoria principal: **Eletricista**; secundária: **Encanador**.
-3. Se atende em domicílio, escolha **área de atendimento** (Campinas e cidades vizinhas) em vez de exibir endereço.
+3. Se atende em domicílio, escolha **área de atendimento** (Jundiaí e cidades vizinhas) em vez de exibir endereço.
 4. Cole o link do site publicado e o mesmo telefone do WhatsApp.
 5. Adicione fotos reais de serviços (antes/depois, ferramentas, atendimento).
 6. Peça avaliações aos primeiros clientes. Link direto: no painel do perfil, **Pedir avaliações**.
@@ -105,7 +105,7 @@ O site sozinho não sustenta a presença. A sequência que funciona é esta:
 - Bio sugerida:
   > Elétrica e hidráulica ⚡🔧
   > Pequenos reparos com capricho
-  > Campinas e região
+  > Jundiaí e região
   > Orçamento no WhatsApp ↓
 - Coloque o link do site na bio.
 - No cartão de visita ou panfleto, use um QR Code apontando para o site. O botão **Compartilhar** no rodapé também facilita o envio do link.
