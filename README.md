@@ -16,42 +16,53 @@ Página única de elétrica e hidráulica, feita para transformar visitas em con
 
 Dê dois cliques em `index.html`. As fontes vêm do Google Fonts, então é preciso estar conectado à internet. Não há instalação, servidor ou banco de dados.
 
-## Antes de publicar (5 minutos)
+## Site publicado
+
+- **Página:** <https://vtrpza.github.io/robson-silva/>
+- **Repositório:** <https://github.com/vtrpza/robson-silva>
+- **Sitemap:** <https://vtrpza.github.io/robson-silva/sitemap.xml>
+- **Atualizações:** todo `push` na branch `main` republica o site em cerca de 1 minuto.
+
+## Revisar antes de divulgar (5 minutos)
 
 1. **Confirme a região:** o site diz “Campinas e região” em vários pontos. Se o atendimento for outra cidade, use Localizar e Substituir por “Sua Cidade e região”.
 2. **Confira o telefone:** o número aparece como `(19) 98356-4986` (visível) e `5519983564986` (links). Troque os dois formatos em todo o arquivo se necessário.
 3. **Ajuste o que for combinado com o Robson:** o site não promete preço, prazo, garantia, horário de atendimento nem formas de pagamento. Se quiser incluir, acrescente apenas informações confirmadas.
 4. **Não invente avaliações ou números.** A página foi escrita sem depoimentos falsos; a confiança vem do atendimento real.
 
-## Publicar de graça
+## Como atualizar
 
-### Opção recomendada — Netlify Drop
+### GitHub Pages (publicação atual)
+
+1. Edite `index.html` (ou os textos do README).
+2. No terminal, dentro da pasta:
+   ```bash
+   git add .
+   git commit -m "Atualiza o site"
+   git push
+   ```
+3. O GitHub Pages detecta o push e publica sozinho. Acompanhe em **Settings → Pages** ou na aba **Actions**.
+4. Para trocar a imagem de compartilhamento, substitua `assets/og.png` mantendo 1200 × 630 px.
+
+### Netlify Drop (alternativa)
 
 1. Acesse <https://app.netlify.com/drop>.
 2. Arraste a pasta inteira (`robs`) para a página.
-3. Em poucos segundos você recebe um endereço tipo `nome-aleatorio.netlify.app`.
-4. Em **Site configuration → Change site name**, troque para algo como `robson-silva-eletrica`.
-5. Para atualizar depois, arraste a pasta novamente.
+3. Em **Site configuration → Change site name**, troque para algo como `robson-silva-eletrica`.
 
-### Alternativas
+### Imagem de compartilhamento e SEO
 
-- **Vercel:** `npx vercel` na pasta do projeto.
-- **GitHub Pages:** suba os arquivos em um repositório e ative Pages em Settings.
+O `og:image`, o `twitter:image`, o JSON-LD e o canônico já apontam para `https://vtrpza.github.io/robson-silva/`. Se um dia usar domínio próprio, troque esses endereços no `<head>` do `index.html`:
 
-### Depois de publicar (importante)
+```html
+<meta property="og:image" content="https://SEU-DOMINIO.com/assets/og.png">
+<meta name="twitter:image" content="https://SEU-DOMINIO.com/assets/og.png">
+<link rel="canonical" href="https://SEU-DOMINIO.com/">
+```
 
-- Abra o site no celular e toque em **Falar no WhatsApp** para confirmar que a conversa abre com a mensagem pronta.
-- Troque o caminho da imagem de compartilhamento por um endereço absoluto, no `<head>` do `index.html`:
-  ```html
-  <meta property="og:image" content="https://SEU-ENDERECO.com/assets/og.png">
-  <meta name="twitter:image" content="https://SEU-ENDERECO.com/assets/og.png">
-  ```
-  Faça o mesmo no campo `"image"` do JSON-LD. O WhatsApp costuma exigir URL absoluta para mostrar a prévia.
-- Adicione, se quiser, uma tag canônica com o endereço final:
-  ```html
-  <link rel="canonical" href="https://SEU-ENDERECO.com/">
-  ```
-- Teste a prévia do link no próprio WhatsApp (envie para você mesmo) ou em <https://www.opengraph.xyz/>.
+E o campo `"url"` e `"image"` do JSON-LD. O WhatsApp exige URL absoluta para exibir a prévia. Teste em <https://www.opengraph.xyz/> ou enviando o link para você mesmo.
+
+Depois de qualquer mudança, abra o site no celular e toque em **Falar no WhatsApp** para confirmar que a conversa abre com a mensagem pronta.
 
 ## O combo de validação digital
 
@@ -122,5 +133,5 @@ O site sozinho não sustenta a presença. A sequência que funciona é esta:
 - **Sem backend:** o formulário de orçamento apenas monta uma mensagem e abre o `wa.me`. Nenhum dado é armazenado, o que simplifica a LGPD.
 - **Sem rastreadores:** não há cookies, pixels ou analytics instalados.
 - **Acessibilidade:** navegação por teclado, link “pular para o conteúdo”, foco visível e respeito a `prefers-reduced-motion`.
-- **SEO local:** título, descrição, Open Graph e dados estruturados `LocalBusiness` já estão no arquivo. Atualize cidade e imagem após a publicação.
+- **SEO local:** título, descrição, Open Graph e dados estruturados `LocalBusiness` já estão no arquivo. Atualize a cidade se o atendimento mudar e as imagens se criar um domínio próprio.
 - **Manutenção:** todo o visual está no topo do `index.html`, nas variáveis CSS. O telefone e a mensagem automática do formulário ficam no final do arquivo, no bloco de script (`WA_NUMBER`).
