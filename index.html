@@ -1,0 +1,1806 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Robson Silva — Elétrica e Hidráulica | Pequenos Reparos em Campinas</title>
+  <meta name="description" content="Instalações elétricas, reparos hidráulicos e pequenos serviços em Campinas e região. Atendimento rápido, serviço caprichado e orçamento sem compromisso pelo WhatsApp (19) 98356-4986.">
+  <meta name="author" content="Robson Silva">
+  <meta name="theme-color" content="#080706">
+  <meta name="robots" content="index, follow">
+  <meta name="format-detection" content="telephone=yes">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="Robson Silva — Elétrica e Hidráulica">
+  <meta property="og:title" content="Robson Silva — Elétrica e Hidráulica">
+  <meta property="og:description" content="Pequenos reparos resolvidos com capricho. Atendimento em Campinas e região, orçamento sem compromisso pelo WhatsApp.">
+  <meta property="og:image" content="assets/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Robson Silva — Elétrica e Hidráulica. WhatsApp (19) 98356-4986.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Robson Silva — Elétrica e Hidráulica">
+  <meta name="twitter:description" content="Pequenos reparos resolvidos com capricho. Orçamento sem compromisso pelo WhatsApp.">
+  <meta name="twitter:image" content="assets/og.png">
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["LocalBusiness", "Electrician", "Plumber"],
+    "name": "Robson Silva — Elétrica e Hidráulica",
+    "description": "Serviços de elétrica, hidráulica e pequenos reparos em Campinas e região. Orçamento sem compromisso pelo WhatsApp.",
+    "telephone": "+55 19 98356-4986",
+    "image": "assets/og.png",
+    "priceRange": "$$",
+    "areaServed": { "@type": "City", "name": "Campinas" },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Campinas",
+      "addressRegion": "SP",
+      "addressCountry": "BR"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+55 19 98356-4986",
+      "contactType": "customer service",
+      "availableLanguage": "Portuguese"
+    }
+  }
+  </script>
+
+  <style>
+    /* ============================================================
+       Tokens
+       ============================================================ */
+    :root {
+      --bg: #080706;
+      --bg-deep: #060505;
+      --surface: #12100d;
+      --surface-2: #17130f;
+      --line: rgba(214, 178, 116, 0.16);
+      --line-strong: rgba(214, 178, 116, 0.34);
+      --gold: #d9b878;
+      --gold-light: #f3e3bd;
+      --gold-deep: #b08342;
+      --ink: #f5f0e6;
+      --muted: #a89f8f;
+      --muted-2: #8c8477;
+      --serif: "Playfair Display", Georgia, "Times New Roman", serif;
+      --sans: "Jost", "Segoe UI", system-ui, -apple-system, sans-serif;
+      --container: 1120px;
+      --radius: 6px;
+      --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
+      --gold-gradient: linear-gradient(135deg, #f7e8c3 0%, #e2c184 38%, #c79a55 70%, #a9793a 100%);
+      --shadow-lg: 0 40px 90px -50px rgba(0, 0, 0, 0.95);
+    }
+
+    /* ============================================================
+       Base
+       ============================================================ */
+    *, *::before, *::after { box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: var(--sans);
+      font-weight: 300;
+      font-size: 17px;
+      line-height: 1.65;
+      letter-spacing: 0.005em;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      z-index: 0;
+      pointer-events: none;
+      background:
+        radial-gradient(ellipse 80% 50% at 50% -10%, rgba(196, 149, 76, 0.14), transparent 62%),
+        radial-gradient(ellipse 55% 40% at 100% 30%, rgba(150, 108, 48, 0.06), transparent 70%),
+        radial-gradient(ellipse 60% 45% at 0% 75%, rgba(150, 108, 48, 0.05), transparent 70%);
+    }
+
+    .noise {
+      position: fixed;
+      inset: 0;
+      z-index: 1;
+      pointer-events: none;
+      opacity: 0.05;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23n)'/%3E%3C/svg%3E");
+      mix-blend-mode: overlay;
+    }
+
+    main, header, footer { position: relative; z-index: 2; }
+
+    ::selection {
+      background: rgba(217, 184, 120, 0.28);
+      color: #fff;
+    }
+
+    h1, h2, h3, p, ul, figure { margin: 0; }
+    ul { padding: 0; list-style: none; }
+    img, svg { display: block; max-width: 100%; }
+    a { color: inherit; text-decoration: none; }
+    button, input, textarea { font: inherit; color: inherit; }
+
+    :focus-visible {
+      outline: 2px solid var(--gold);
+      outline-offset: 4px;
+      border-radius: 2px;
+    }
+
+    .skip-link {
+      position: fixed;
+      top: 12px;
+      left: 12px;
+      z-index: 100;
+      padding: 12px 18px;
+      background: var(--gold-light);
+      color: #1a140c;
+      font-size: 0.82rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      transform: translateY(-160%);
+      transition: transform 0.2s var(--ease);
+    }
+    .skip-link:focus { transform: translateY(0); }
+
+    .container {
+      width: 100%;
+      max-width: var(--container);
+      margin-inline: auto;
+      padding-inline: clamp(20px, 5vw, 40px);
+    }
+
+    .section { padding-block: clamp(72px, 10vw, 118px); }
+
+    section[id] { scroll-margin-top: 92px; }
+
+    .gold-text {
+      background: var(--gold-gradient);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .kicker {
+      font-family: var(--sans);
+      font-size: 0.68rem;
+      font-weight: 500;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--gold);
+    }
+
+    .ornament {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      margin-top: 22px;
+    }
+    .ornament span {
+      width: clamp(48px, 8vw, 82px);
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--line-strong));
+    }
+    .ornament span:last-child {
+      background: linear-gradient(90deg, var(--line-strong), transparent);
+    }
+    .ornament i {
+      width: 5px;
+      height: 5px;
+      background: var(--gold);
+      transform: rotate(45deg);
+      opacity: 0.9;
+    }
+
+    .section-head {
+      text-align: center;
+      max-width: 720px;
+      margin: 0 auto clamp(40px, 6vw, 64px);
+    }
+    .section-head h2 {
+      margin-top: 14px;
+      font-family: var(--serif);
+      font-weight: 500;
+      font-size: clamp(2.35rem, 5.2vw, 3.5rem);
+      line-height: 1.08;
+      letter-spacing: -0.015em;
+      color: var(--ink);
+    }
+    .section-head p.lead {
+      margin-top: 18px;
+      color: var(--muted);
+      font-size: 1.02rem;
+      max-width: 54ch;
+      margin-inline: auto;
+    }
+
+    /* ============================================================
+       Buttons
+       ============================================================ */
+    .btn {
+      --btn-bg: transparent;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 15px 26px;
+      border: 1px solid transparent;
+      border-radius: 3px;
+      background: var(--btn-bg);
+      font-family: var(--sans);
+      font-size: 0.78rem;
+      font-weight: 500;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      line-height: 1;
+      cursor: pointer;
+      transition: transform 0.25s var(--ease), box-shadow 0.25s var(--ease),
+                  background-color 0.25s var(--ease), border-color 0.25s var(--ease),
+                  color 0.25s var(--ease);
+    }
+    .btn svg { width: 17px; height: 17px; flex: none; }
+
+    .btn-gold {
+      background: var(--gold-gradient);
+      color: #211809;
+      border-color: rgba(255, 240, 200, 0.32);
+      box-shadow: 0 14px 34px -18px rgba(217, 184, 120, 0.75);
+    }
+    .btn-gold:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 20px 42px -18px rgba(217, 184, 120, 0.85);
+    }
+    .btn-gold:active { transform: translateY(0); }
+
+    .btn-ghost {
+      border-color: var(--line-strong);
+      color: var(--gold-light);
+      background: rgba(255, 255, 255, 0.015);
+    }
+    .btn-ghost:hover {
+      border-color: var(--gold);
+      background: rgba(217, 184, 120, 0.08);
+      transform: translateY(-2px);
+    }
+
+    .btn-outline {
+      border-color: var(--line-strong);
+      color: var(--gold-light);
+      background: transparent;
+    }
+    .btn-outline:hover {
+      border-color: var(--gold);
+      background: rgba(217, 184, 120, 0.08);
+    }
+
+    /* ============================================================
+       Header
+       ============================================================ */
+    .site-header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 50;
+      border-bottom: 1px solid transparent;
+      transition: background-color 0.35s var(--ease), border-color 0.35s var(--ease),
+                  backdrop-filter 0.35s var(--ease);
+    }
+    .site-header.is-scrolled {
+      background: rgba(8, 7, 6, 0.82);
+      border-bottom-color: var(--line);
+      -webkit-backdrop-filter: blur(18px) saturate(1.1);
+      backdrop-filter: blur(18px) saturate(1.1);
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      min-height: 82px;
+      transition: min-height 0.35s var(--ease);
+    }
+    .site-header.is-scrolled .header-inner { min-height: 68px; }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 13px;
+      margin-right: auto;
+      min-width: 0;
+    }
+    .brand-mark {
+      display: grid;
+      place-items: center;
+      width: 42px;
+      height: 42px;
+      flex: none;
+      border: 1px solid var(--line-strong);
+      border-radius: 50%;
+      font-family: var(--serif);
+      font-size: 0.9rem;
+      letter-spacing: 0.08em;
+      color: var(--gold-light);
+      background: radial-gradient(circle at 30% 20%, rgba(217, 184, 120, 0.12), transparent 70%);
+    }
+    .brand-text { display: flex; flex-direction: column; line-height: 1.15; min-width: 0; }
+    .brand-text strong {
+      font-family: var(--serif);
+      font-weight: 500;
+      font-size: 1.08rem;
+      letter-spacing: 0.01em;
+      color: var(--ink);
+      white-space: nowrap;
+    }
+    .brand-text small {
+      font-size: 0.6rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--muted-2);
+      margin-top: 2px;
+      white-space: nowrap;
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      gap: clamp(20px, 3vw, 38px);
+    }
+    .nav a {
+      position: relative;
+      font-size: 0.7rem;
+      font-weight: 400;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--muted);
+      padding-block: 6px;
+      transition: color 0.25s var(--ease);
+    }
+    .nav a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 1px;
+      background: var(--gold);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.3s var(--ease);
+    }
+    .nav a:hover { color: var(--gold-light); }
+    .nav a:hover::after { transform: scaleX(1); }
+
+    .header-cta { padding: 12px 20px; font-size: 0.69rem; }
+
+    /* ============================================================
+       Hero
+       ============================================================ */
+    .hero {
+      position: relative;
+      padding: clamp(128px, 17vh, 178px) 0 clamp(64px, 8vw, 88px);
+      text-align: center;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: -18%;
+      left: 50%;
+      width: min(900px, 120vw);
+      height: 680px;
+      transform: translateX(-50%);
+      background: radial-gradient(ellipse at center, rgba(206, 161, 88, 0.16), transparent 62%);
+      pointer-events: none;
+      filter: blur(10px);
+    }
+    .hero .container { position: relative; }
+
+    .hero-ornament {
+      width: clamp(132px, 15vw, 176px);
+      margin: 0 auto 26px;
+      opacity: 0.95;
+    }
+
+    .hero .eyebrow {
+      font-size: clamp(0.6rem, 1.4vw, 0.71rem);
+      font-weight: 500;
+      letter-spacing: 0.34em;
+      text-transform: uppercase;
+      color: var(--gold);
+    }
+
+    .hero h1 {
+      margin-top: 16px;
+      font-family: var(--serif);
+      font-weight: 600;
+      font-size: clamp(3.15rem, 11.4vw, 7.4rem);
+      line-height: 0.98;
+      letter-spacing: -0.025em;
+      background: linear-gradient(180deg, #f9edcf 0%, #e7ca93 42%, #c99c58 78%, #b4863f 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      filter: drop-shadow(0 8px 40px rgba(201, 156, 88, 0.13));
+    }
+
+    .hero-services {
+      margin-top: 14px;
+      font-family: var(--sans);
+      font-weight: 400;
+      font-size: clamp(1.02rem, 2.4vw, 1.35rem);
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--gold-light);
+    }
+    .hero-services .amp {
+      font-family: var(--serif);
+      font-style: italic;
+      text-transform: none;
+      letter-spacing: 0;
+      color: var(--gold);
+      padding-inline: 4px;
+    }
+
+    .hero-repairs {
+      margin-top: 10px;
+      font-size: 0.7rem;
+      letter-spacing: 0.26em;
+      text-transform: uppercase;
+      color: var(--ink);
+      opacity: 0.88;
+    }
+
+    .hero-lead {
+      max-width: 530px;
+      margin: 26px auto 0;
+      font-size: clamp(1rem, 1.5vw, 1.08rem);
+      font-weight: 300;
+      line-height: 1.75;
+      color: var(--muted);
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 14px;
+      margin-top: 34px;
+    }
+    .hero-actions .btn { min-width: 210px; }
+
+    .hero-note {
+      margin-top: 18px;
+      font-size: 0.74rem;
+      letter-spacing: 0.08em;
+      color: var(--muted-2);
+    }
+    .hero-note .dot {
+      padding: 0 5px;
+      color: var(--gold-deep);
+    }
+
+    .trust-strip {
+      margin-top: clamp(54px, 7vw, 76px);
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+      background: linear-gradient(90deg, transparent, rgba(217, 184, 120, 0.035), transparent);
+    }
+    .trust-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .trust-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      padding: 22px 18px;
+      font-size: 0.74rem;
+      letter-spacing: 0.13em;
+      text-transform: uppercase;
+      color: #c8c0b1;
+      text-align: left;
+    }
+    .trust-item + .trust-item { border-left: 1px solid var(--line); }
+    .trust-item svg { width: 19px; height: 19px; flex: none; color: var(--gold); }
+
+    /* ============================================================
+       Services
+       ============================================================ */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: clamp(18px, 2.4vw, 26px);
+    }
+
+    .service-card {
+      position: relative;
+      overflow: hidden;
+      padding: clamp(28px, 4vw, 42px);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background:
+        radial-gradient(120% 90% at 100% 0%, rgba(217, 184, 120, 0.07), transparent 55%),
+        linear-gradient(170deg, #13100c 0%, #0c0a08 100%);
+      transition: transform 0.4s var(--ease), border-color 0.4s var(--ease),
+                  box-shadow 0.4s var(--ease);
+    }
+    .service-card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(243, 227, 189, 0.45), transparent);
+      opacity: 0.5;
+      transition: opacity 0.4s var(--ease);
+    }
+    .service-card:hover {
+      transform: translateY(-4px);
+      border-color: var(--line-strong);
+      box-shadow: var(--shadow-lg);
+    }
+    .service-card:hover::before { opacity: 1; }
+
+    .service-head {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      padding-bottom: 22px;
+      margin-bottom: 8px;
+      border-bottom: 1px solid var(--line);
+    }
+    .service-icon {
+      display: grid;
+      place-items: center;
+      width: 46px;
+      height: 46px;
+      flex: none;
+      border: 1px solid var(--line-strong);
+      border-radius: 50%;
+      background: rgba(217, 184, 120, 0.06);
+      color: var(--gold);
+    }
+    .service-icon svg { width: 21px; height: 21px; }
+
+    .service-card h3 {
+      font-family: var(--serif);
+      font-weight: 500;
+      font-size: clamp(1.6rem, 3vw, 2.05rem);
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      background: var(--gold-gradient);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .service-list { margin-top: 12px; }
+    .service-list li {
+      display: flex;
+      align-items: baseline;
+      gap: 13px;
+      padding: 11px 0;
+      font-size: 1rem;
+      font-weight: 300;
+      color: #ddd5c6;
+      border-bottom: 1px solid rgba(214, 178, 116, 0.07);
+    }
+    .service-list li:last-child { border-bottom: 0; padding-bottom: 0; }
+    .service-list li::before {
+      content: "";
+      flex: none;
+      width: 4px;
+      height: 4px;
+      background: var(--gold);
+      transform: rotate(45deg) translateY(-2px);
+      opacity: 0.85;
+    }
+
+    .services-note {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 10px 18px;
+      margin-top: clamp(34px, 5vw, 48px);
+      text-align: center;
+      font-family: var(--serif);
+      font-style: italic;
+      font-size: clamp(1.02rem, 1.7vw, 1.16rem);
+      color: var(--gold-light);
+    }
+    .services-note .dot {
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background: var(--gold-deep);
+    }
+
+    /* ============================================================
+       Steps
+       ============================================================ */
+    .steps {
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+      background:
+        radial-gradient(ellipse 60% 60% at 50% 0%, rgba(196, 149, 76, 0.06), transparent 70%),
+        linear-gradient(180deg, rgba(18, 15, 11, 0.55), transparent 55%);
+    }
+
+    .steps-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: clamp(18px, 2.4vw, 26px);
+      counter-reset: step;
+    }
+    .step {
+      position: relative;
+      padding: clamp(26px, 3.4vw, 36px);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: linear-gradient(170deg, rgba(255, 255, 255, 0.025), rgba(255, 255, 255, 0.005));
+      transition: border-color 0.35s var(--ease), transform 0.35s var(--ease);
+    }
+    .step:hover { border-color: var(--line-strong); transform: translateY(-3px); }
+    .step-number {
+      font-family: var(--serif);
+      font-size: 2.35rem;
+      line-height: 1;
+      color: transparent;
+      -webkit-text-stroke: 1px rgba(217, 184, 120, 0.45);
+      letter-spacing: 0.04em;
+    }
+    .step h3 {
+      margin-top: 20px;
+      font-family: var(--serif);
+      font-weight: 500;
+      font-size: 1.32rem;
+      letter-spacing: 0.01em;
+      color: var(--ink);
+    }
+    .step p {
+      margin-top: 9px;
+      font-size: 0.94rem;
+      line-height: 1.7;
+      color: var(--muted);
+    }
+    .step-arrow {
+      position: absolute;
+      top: clamp(26px, 3.4vw, 36px);
+      right: clamp(26px, 3.4vw, 36px);
+      width: 18px;
+      height: 18px;
+      color: var(--gold-deep);
+      opacity: 0.7;
+    }
+
+    .steps-foot {
+      margin-top: 30px;
+      text-align: center;
+      font-size: 0.86rem;
+      color: var(--muted-2);
+    }
+
+    /* ============================================================
+       Quote
+       ============================================================ */
+    .quote { padding-block: clamp(72px, 9vw, 108px); }
+
+    .quote-card {
+      position: relative;
+      display: grid;
+      grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
+      gap: clamp(32px, 5vw, 64px);
+      padding: clamp(28px, 5vw, 58px);
+      border: 1px solid var(--line-strong);
+      border-radius: 10px;
+      overflow: hidden;
+      background:
+        radial-gradient(90% 110% at 100% 0%, rgba(217, 184, 120, 0.1), transparent 55%),
+        linear-gradient(150deg, #16120d 0%, #0d0b08 62%, #0a0907 100%);
+      box-shadow: var(--shadow-lg);
+    }
+    .quote-card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: inherit;
+      pointer-events: none;
+      box-shadow: inset 0 1px 0 rgba(247, 232, 195, 0.14);
+    }
+
+    .quote-copy { position: relative; align-self: center; }
+    .quote-copy h2 {
+      margin-top: 14px;
+      font-family: var(--serif);
+      font-weight: 500;
+      font-size: clamp(2.15rem, 4.4vw, 3.1rem);
+      line-height: 1.1;
+      letter-spacing: -0.015em;
+    }
+    .quote-copy h2 em {
+      font-style: italic;
+      font-weight: 500;
+      color: var(--gold);
+    }
+    .quote-copy > p {
+      margin-top: 18px;
+      max-width: 38ch;
+      font-size: 0.98rem;
+      line-height: 1.75;
+      color: var(--muted);
+    }
+
+    .quote-points {
+      margin-top: 26px;
+      display: grid;
+      gap: 10px;
+    }
+    .quote-points li {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.85rem;
+      letter-spacing: 0.02em;
+      color: #cfc6b5;
+    }
+    .quote-points svg { width: 15px; height: 15px; color: var(--gold); flex: none; }
+
+    .quote-phone {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 30px;
+      font-family: var(--serif);
+      font-size: 1.18rem;
+      letter-spacing: 0.04em;
+      color: var(--gold-light);
+      border-bottom: 1px solid var(--line-strong);
+      padding-bottom: 4px;
+      transition: color 0.25s var(--ease), border-color 0.25s var(--ease);
+    }
+    .quote-phone:hover { color: #fff; border-color: var(--gold); }
+    .quote-phone svg { width: 16px; height: 16px; color: var(--gold); }
+
+    .quote-form {
+      position: relative;
+      display: grid;
+      gap: 20px;
+      align-content: start;
+    }
+
+    .field { display: grid; gap: 8px; }
+    .field-label,
+    .quote-form legend {
+      font-size: 0.67rem;
+      font-weight: 500;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #bdb3a1;
+    }
+    .field-label .opt {
+      font-weight: 300;
+      letter-spacing: 0.06em;
+      text-transform: none;
+      color: var(--muted-2);
+    }
+
+    .quote-form input[type="text"],
+    .quote-form textarea {
+      width: 100%;
+      padding: 14px 16px;
+      border: 1px solid var(--line);
+      border-radius: 4px;
+      background: rgba(0, 0, 0, 0.28);
+      color: var(--ink);
+      font-size: 0.96rem;
+      font-weight: 300;
+      line-height: 1.55;
+      transition: border-color 0.25s var(--ease), background-color 0.25s var(--ease),
+                  box-shadow 0.25s var(--ease);
+    }
+    .quote-form input::placeholder,
+    .quote-form textarea::placeholder { color: #6f6960; opacity: 1; }
+    .quote-form input:hover,
+    .quote-form textarea:hover { border-color: rgba(214, 178, 116, 0.3); }
+    .quote-form input:focus,
+    .quote-form textarea:focus {
+      outline: none;
+      border-color: var(--gold);
+      background: rgba(0, 0, 0, 0.4);
+      box-shadow: 0 0 0 3px rgba(217, 184, 120, 0.1);
+    }
+    .quote-form textarea { min-height: 104px; resize: vertical; }
+
+    .quote-form fieldset {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      min-width: 0;
+    }
+    .quote-form legend { margin-bottom: 10px; padding: 0; }
+
+    .chips { display: flex; flex-wrap: wrap; gap: 9px; }
+    .chip { position: relative; display: inline-flex; }
+    .chip input {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      opacity: 0;
+      pointer-events: none;
+    }
+    .chip span {
+      display: inline-flex;
+      align-items: center;
+      padding: 9px 17px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      font-size: 0.8rem;
+      letter-spacing: 0.05em;
+      color: var(--muted);
+      cursor: pointer;
+      user-select: none;
+      transition: all 0.22s var(--ease);
+    }
+    .chip span:hover { border-color: var(--line-strong); color: var(--ink); }
+    .chip input:checked + span {
+      border-color: var(--gold);
+      background: rgba(217, 184, 120, 0.14);
+      color: var(--gold-light);
+    }
+    .chip input:focus-visible + span { outline: 2px solid var(--gold); outline-offset: 3px; }
+
+    .btn-submit {
+      width: 100%;
+      margin-top: 2px;
+      padding-block: 17px;
+    }
+
+    .form-note {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      margin-top: -6px;
+      font-size: 0.74rem;
+      line-height: 1.55;
+      color: var(--muted-2);
+    }
+    .form-note svg { width: 14px; height: 14px; flex: none; margin-top: 2px; }
+
+    /* ============================================================
+       FAQ
+       ============================================================ */
+    .faq { padding-top: clamp(48px, 6vw, 72px); }
+
+    .faq-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+      gap: clamp(30px, 6vw, 72px);
+      align-items: start;
+      padding-top: clamp(40px, 6vw, 58px);
+      border-top: 1px solid var(--line);
+    }
+    .faq-intro h2 {
+      margin-top: 14px;
+      font-family: var(--serif);
+      font-weight: 500;
+      font-size: clamp(2.1rem, 4.4vw, 2.9rem);
+      line-height: 1.12;
+      letter-spacing: -0.015em;
+    }
+    .faq-intro p {
+      margin-top: 16px;
+      max-width: 34ch;
+      font-size: 0.96rem;
+      line-height: 1.75;
+      color: var(--muted);
+    }
+    .faq-intro .btn { margin-top: 24px; }
+
+    .faq-list { border-top: 1px solid var(--line); }
+    .faq-item { border-bottom: 1px solid var(--line); }
+    .faq-item summary {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 22px 2px;
+      cursor: pointer;
+      list-style: none;
+      font-family: var(--serif);
+      font-size: clamp(1.06rem, 2vw, 1.2rem);
+      font-weight: 500;
+      color: var(--ink);
+      transition: color 0.25s var(--ease);
+    }
+    .faq-item summary::-webkit-details-marker { display: none; }
+    .faq-item summary:hover { color: var(--gold-light); }
+    .faq-plus {
+      position: relative;
+      flex: none;
+      width: 16px;
+      height: 16px;
+      transition: transform 0.3s var(--ease);
+    }
+    .faq-plus::before,
+    .faq-plus::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 13px;
+      height: 1px;
+      background: var(--gold);
+      transform: translate(-50%, -50%);
+    }
+    .faq-plus::after { transform: translate(-50%, -50%) rotate(90deg); }
+    .faq-item[open] .faq-plus { transform: rotate(45deg); }
+    .faq-item p {
+      padding: 0 34px 24px 2px;
+      font-size: 0.94rem;
+      line-height: 1.75;
+      color: var(--muted);
+      max-width: 60ch;
+    }
+
+    /* ============================================================
+       CTA band
+       ============================================================ */
+    .cta-band {
+      position: relative;
+      overflow: hidden;
+      padding-block: clamp(74px, 9vw, 106px);
+      text-align: center;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+      background:
+        radial-gradient(ellipse 60% 120% at 50% 120%, rgba(196, 149, 76, 0.14), transparent 65%),
+        linear-gradient(180deg, #0a0806, #0e0b08);
+    }
+    .cta-band h2 {
+      margin-top: 14px;
+      font-family: var(--serif);
+      font-weight: 500;
+      font-size: clamp(2.3rem, 5.6vw, 3.9rem);
+      line-height: 1.08;
+      letter-spacing: -0.02em;
+    }
+    .cta-band h2 em {
+      font-style: italic;
+      color: var(--gold);
+    }
+    .cta-band p {
+      margin: 18px auto 0;
+      max-width: 46ch;
+      font-size: 0.98rem;
+      color: var(--muted);
+    }
+    .cta-actions {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 14px;
+      margin-top: 30px;
+    }
+    .cta-phone {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 20px;
+      font-size: 0.8rem;
+      letter-spacing: 0.14em;
+      color: var(--muted);
+      transition: color 0.25s var(--ease);
+    }
+    .cta-phone:hover { color: var(--gold-light); }
+    .cta-phone svg { width: 14px; height: 14px; color: var(--gold); }
+
+    /* ============================================================
+       Footer
+       ============================================================ */
+    .site-footer {
+      padding: 62px 0 30px;
+      background: var(--bg-deep);
+      font-size: 0.88rem;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.6fr 0.8fr 1.1fr;
+      gap: clamp(32px, 5vw, 64px);
+      padding-bottom: 40px;
+    }
+    .footer-brand .brand { margin-bottom: 18px; }
+    .footer-brand p {
+      max-width: 34ch;
+      color: var(--muted-2);
+      font-size: 0.84rem;
+      line-height: 1.7;
+    }
+    .footer-title {
+      margin-bottom: 16px;
+      font-size: 0.64rem;
+      font-weight: 500;
+      letter-spacing: 0.24em;
+      text-transform: uppercase;
+      color: var(--gold);
+    }
+    .footer-links { display: grid; gap: 9px; }
+    .footer-links a {
+      color: var(--muted);
+      transition: color 0.22s var(--ease);
+    }
+    .footer-links a:hover { color: var(--gold-light); }
+
+    .footer-contact { display: grid; gap: 9px; color: var(--muted); }
+    .footer-contact strong {
+      font-weight: 400;
+      color: var(--ink);
+      letter-spacing: 0.02em;
+    }
+    .footer-contact .small { font-size: 0.78rem; color: var(--muted-2); }
+
+    .footer-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 18px;
+      margin-top: 12px;
+    }
+    .footer-action {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 0;
+      border: 0;
+      background: none;
+      color: var(--muted-2);
+      font-size: 0.74rem;
+      letter-spacing: 0.06em;
+      cursor: pointer;
+      transition: color 0.22s var(--ease);
+    }
+    .footer-action:hover { color: var(--gold-light); }
+    .footer-action svg { width: 14px; height: 14px; color: var(--gold-deep); }
+
+    .footer-bottom {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px 24px;
+      padding-top: 24px;
+      border-top: 1px solid var(--line);
+      font-size: 0.72rem;
+      letter-spacing: 0.04em;
+      color: #8a8377;
+    }
+    .footer-bottom a { transition: color 0.22s var(--ease); }
+    .footer-bottom a:hover { color: var(--gold-light); }
+
+    /* ============================================================
+       Floating WhatsApp
+       ============================================================ */
+    .wa-float {
+      position: fixed;
+      right: clamp(16px, 3vw, 28px);
+      bottom: clamp(16px, 3vw, 28px);
+      z-index: 60;
+      display: grid;
+      place-items: center;
+      width: 54px;
+      height: 54px;
+      border-radius: 50%;
+      background: var(--gold-gradient);
+      color: #201708;
+      box-shadow: 0 16px 36px -14px rgba(0, 0, 0, 0.9), 0 0 0 1px rgba(255, 240, 200, 0.25) inset;
+      opacity: 0;
+      transform: translateY(14px) scale(0.94);
+      pointer-events: none;
+      transition: opacity 0.35s var(--ease), transform 0.35s var(--ease),
+                  box-shadow 0.3s var(--ease);
+    }
+    .wa-float.is-visible {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+      pointer-events: auto;
+    }
+    .wa-float:hover {
+      transform: translateY(-3px) scale(1.03);
+      box-shadow: 0 22px 40px -14px rgba(0, 0, 0, 0.95);
+    }
+    .wa-float svg { width: 25px; height: 25px; }
+
+    /* ============================================================
+       Toast
+       ============================================================ */
+    .toast {
+      position: fixed;
+      left: 50%;
+      bottom: 30px;
+      z-index: 80;
+      padding: 12px 20px;
+      border: 1px solid var(--line-strong);
+      border-radius: 4px;
+      background: #17130e;
+      color: var(--gold-light);
+      font-size: 0.82rem;
+      letter-spacing: 0.02em;
+      box-shadow: 0 20px 50px -20px rgba(0, 0, 0, 0.9);
+      opacity: 0;
+      transform: translate(-50%, 12px);
+      pointer-events: none;
+      transition: opacity 0.3s var(--ease), transform 0.3s var(--ease);
+    }
+    .toast.is-visible { opacity: 1; transform: translate(-50%, 0); }
+
+    /* ============================================================
+       Motion / reveal
+       ============================================================ */
+    html.js .reveal {
+      opacity: 0;
+      transform: translateY(22px);
+      transition: opacity 0.75s var(--ease), transform 0.75s var(--ease);
+      transition-delay: var(--delay, 0ms);
+    }
+    html.js .reveal.is-visible { opacity: 1; transform: none; }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+      }
+      html.js .reveal { opacity: 1; transform: none; }
+    }
+
+    /* ============================================================
+       Responsive
+       ============================================================ */
+    @media (max-width: 960px) {
+      .nav { display: none; }
+      .quote-card { grid-template-columns: 1fr; }
+      .quote-copy > p { max-width: 56ch; }
+      .quote-phone { margin-top: 22px; }
+      .faq-layout { grid-template-columns: 1fr; gap: 28px; }
+      .faq-intro p { max-width: 56ch; }
+      .faq-intro .btn { margin-top: 20px; }
+    }
+
+    @media (max-width: 800px) {
+      .services-grid { grid-template-columns: 1fr; }
+      .steps-grid { grid-template-columns: 1fr; }
+      .step-number { font-size: 2rem; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+      .footer-brand { grid-column: 1 / -1; }
+    }
+
+    @media (max-width: 620px) {
+      body { font-size: 16px; }
+      .header-inner { min-height: 72px; gap: 14px; }
+      .site-header.is-scrolled .header-inner { min-height: 62px; }
+      .brand-mark { width: 38px; height: 38px; font-size: 0.82rem; }
+      .brand-text strong { font-size: 1rem; }
+      .brand-text small { display: none; }
+      .header-cta { padding: 11px 15px; font-size: 0.62rem; letter-spacing: 0.12em; }
+      .header-cta svg { width: 15px; height: 15px; }
+      .hero { padding-top: 112px; }
+      .hero h1 { font-size: clamp(3rem, 15.5vw, 4.4rem); }
+      .hero-services { letter-spacing: 0.09em; font-size: 1rem; }
+      .hero-lead { margin-top: 20px; font-size: 0.96rem; }
+      .hero-note {
+        display: flex;
+        flex-direction: column;
+        gap: 1px;
+        letter-spacing: 0.06em;
+        line-height: 1.6;
+      }
+      .hero-note .dot { display: none; }
+      .hero-actions { flex-direction: column; align-items: stretch; margin-top: 28px; }
+      .hero-actions .btn { width: 100%; min-width: 0; }
+      .trust-grid { grid-template-columns: 1fr; }
+      .trust-item { justify-content: flex-start; padding: 15px 4px; }
+      .trust-item + .trust-item { border-left: 0; border-top: 1px solid var(--line); }
+      .service-card { padding: 26px 22px; }
+      .service-list li { font-size: 0.95rem; }
+      .quote-card { padding: 28px 20px; border-radius: 8px; }
+      .quote-form { gap: 18px; }
+      .footer-grid { grid-template-columns: 1fr; gap: 30px; }
+      .footer-bottom { justify-content: flex-start; }
+      .wa-float { width: 50px; height: 50px; }
+      .wa-float svg { width: 23px; height: 23px; }
+      .toast { bottom: 82px; max-width: calc(100vw - 32px); text-align: center; }
+    }
+
+    @media (max-width: 380px) {
+      .brand-text strong { font-size: 0.94rem; }
+      .header-cta span { display: none; }
+      .header-cta { width: 40px; height: 40px; padding: 0; border-radius: 50%; }
+      .hero .eyebrow {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3px;
+        letter-spacing: 0.26em;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+  <div class="noise" aria-hidden="true"></div>
+
+  <header class="site-header" id="topo">
+    <div class="container header-inner">
+      <a class="brand" href="#topo" aria-label="Robson Silva — voltar ao início">
+        <span class="brand-mark" aria-hidden="true">RS</span>
+        <span class="brand-text">
+          <strong>Robson Silva</strong>
+          <small>Elétrica e Hidráulica</small>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Navegação principal">
+        <a href="#servicos">Serviços</a>
+        <a href="#como-funciona">Como funciona</a>
+        <a href="#orcamento">Orçamento</a>
+      </nav>
+
+      <a class="btn btn-outline header-cta"
+         href="https://wa.me/5519983564986?text=Ol%C3%A1%2C%20Robson!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20or%C3%A7amento."
+         target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 0 448 512" fill="currentColor" aria-hidden="true">
+          <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/>
+        </svg>
+        <span>WhatsApp</span>
+      </a>
+    </div>
+  </header>
+
+  <main id="conteudo">
+
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="titulo-principal">
+      <div class="container">
+        <svg class="hero-ornament" viewBox="0 0 180 92" fill="none" aria-hidden="true">
+          <defs>
+            <linearGradient id="gold-stroke" x1="8" y1="20" x2="172" y2="88" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#f3e3bd"/>
+              <stop offset="0.55" stop-color="#d9b878"/>
+              <stop offset="1" stop-color="#a9793a"/>
+            </linearGradient>
+          </defs>
+          <g stroke="url(#gold-stroke)" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M8 50h164"/>
+            <path d="M22 58h136"/>
+            <path d="M48 58l6.5 17.5c.9 2.4 3.2 4 5.8 4h53.4c2.6 0 4.9-1.6 5.8-4L126 58"/>
+            <path d="M84 58V39c0-8.6 6.6-14.5 15.2-14.5h6.9c7.6 0 12.9 5.4 12.9 13.2V43"/>
+            <path d="M119 43v4"/>
+            <path d="M84 44H75"/>
+            <path d="M75 39.5v9"/>
+          </g>
+        </svg>
+
+        <p class="eyebrow">
+          <span>Pequenos reparos,</span> <span>feitos com capricho</span>
+        </p>
+        <h1 id="titulo-principal">Robson Silva</h1>
+        <p class="hero-services">Elétrica <span class="amp">e</span> Hidráulica</p>
+        <p class="hero-repairs">Pequenos Reparos</p>
+
+        <p class="hero-lead">
+          Tomada que parou de funcionar, torneira pingando, chuveiro para trocar.
+          Serviços do dia a dia resolvidos com cuidado, do orçamento ao acabamento.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn btn-gold"
+             href="https://wa.me/5519983564986?text=Ol%C3%A1%2C%20Robson!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20or%C3%A7amento."
+             target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 448 512" fill="currentColor" aria-hidden="true">
+              <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/>
+            </svg>
+            Falar no WhatsApp
+          </a>
+          <a class="btn btn-ghost" href="#servicos">Ver serviços</a>
+        </div>
+
+        <p class="hero-note">
+          <span>Atendimento em Campinas e região</span>
+          <span class="dot" aria-hidden="true">·</span>
+          <span>Orçamento sem compromisso</span>
+        </p>
+
+        <div class="trust-strip">
+          <div class="trust-grid">
+            <div class="trust-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>
+              </svg>
+              <span>Atendimento rápido</span>
+            </div>
+            <div class="trust-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21.8 10A10 10 0 1 1 17 3.34"/><path d="m9 11 3 3L22 4"/>
+              </svg>
+              <span>Orçamento sem compromisso</span>
+            </div>
+            <div class="trust-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="m12 3 1.9 5.8L20 10.7l-4.9 3.6L17 20l-5-3.4L7 20l1.9-5.7L4 10.7l6.1-1.9L12 3Z"/>
+              </svg>
+              <span>Serviço limpo e organizado</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVIÇOS -->
+    <section class="section" id="servicos" aria-labelledby="titulo-servicos">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="kicker">O que eu resolvo</p>
+          <h2 id="titulo-servicos">Serviços</h2>
+          <div class="ornament" aria-hidden="true"><span></span><i></i><span></span></div>
+          <p class="lead">
+            Elétrica e hidráulica para o dia a dia da sua casa — sem obra grande,
+            sem complicação.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card reveal">
+            <div class="service-head">
+              <span class="service-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M13 2 3 14h9l-1 8 10-12h-9l1-8Z"/>
+                </svg>
+              </span>
+              <h3>Elétrica</h3>
+            </div>
+            <ul class="service-list">
+              <li>Instalações elétricas</li>
+              <li>Troca de tomadas e interruptores</li>
+              <li>Troca de lâmpadas / LED</li>
+              <li>Disjuntores e quadro de distribuição</li>
+              <li>Ventilador de teto / lustres</li>
+              <li>Chuveiro elétrico</li>
+            </ul>
+          </article>
+
+          <article class="service-card reveal" style="--delay: 90ms">
+            <div class="service-head">
+              <span class="service-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2.7 17.7 8.3a8 8 0 1 1-11.4 0L12 2.7Z"/>
+                </svg>
+              </span>
+              <h3>Hidráulica</h3>
+            </div>
+            <ul class="service-list">
+              <li>Vazamentos e vazões</li>
+              <li>Troca de torneiras e registros</li>
+              <li>Desentupimento de pias</li>
+              <li>Instalação de caixa de descarga</li>
+              <li>Vazamentos em tubulações</li>
+              <li>Instalação de chuveiro e duchas</li>
+            </ul>
+          </article>
+        </div>
+
+        <p class="services-note reveal">
+          Atendimento rápido <span class="dot" aria-hidden="true"></span>
+          Orçamento sem compromisso
+        </p>
+      </div>
+    </section>
+
+    <!-- COMO FUNCIONA -->
+    <section class="section steps" id="como-funciona" aria-labelledby="titulo-como">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="kicker">Simples assim</p>
+          <h2 id="titulo-como">Como funciona</h2>
+          <div class="ornament" aria-hidden="true"><span></span><i></i><span></span></div>
+          <p class="lead">Sem formulário longo, sem cadastro. Uma conversa no WhatsApp resolve.</p>
+        </div>
+
+        <div class="steps-grid">
+          <article class="step reveal">
+            <span class="step-number" aria-hidden="true">01</span>
+            <h3>Chame no WhatsApp</h3>
+            <p>Mande uma mensagem contando o que aconteceu. Se puder, envie fotos do local.</p>
+            <svg class="step-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M5 12h14M13 6l6 6-6 6"/>
+            </svg>
+          </article>
+
+          <article class="step reveal" style="--delay: 90ms">
+            <span class="step-number" aria-hidden="true">02</span>
+            <h3>Receba a estimativa</h3>
+            <p>Entendo o serviço e passo o valor e o prazo. Sem compromisso e sem enrolação.</p>
+            <svg class="step-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M5 12h14M13 6l6 6-6 6"/>
+            </svg>
+          </article>
+
+          <article class="step reveal" style="--delay: 180ms">
+            <span class="step-number" aria-hidden="true">03</span>
+            <h3>Agende o reparo</h3>
+            <p>Combinamos o melhor horário e o serviço é feito com cuidado e limpeza.</p>
+            <svg class="step-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M5 12h14M13 6l6 6-6 6"/>
+            </svg>
+          </article>
+        </div>
+
+        <p class="steps-foot">Atendimento em domicílio em Campinas e região.</p>
+      </div>
+    </section>
+
+    <!-- ORÇAMENTO -->
+    <section class="section quote" id="orcamento" aria-labelledby="titulo-orcamento">
+      <div class="container">
+        <div class="quote-card reveal">
+          <div class="quote-copy">
+            <p class="kicker">Orçamento rápido</p>
+            <h2 id="titulo-orcamento">Conte o que<br> <em>precisa resolver.</em></h2>
+            <p>
+              Preencha só o essencial. O botão abre o WhatsApp com sua mensagem
+              já escrita — é só enviar.
+            </p>
+
+            <ul class="quote-points">
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg>
+                Sem cadastro e sem cobrança
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg>
+                Resposta pelo próprio WhatsApp
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg>
+                Fotos ajudam a agilizar o orçamento
+              </li>
+            </ul>
+
+            <a class="quote-phone" href="tel:+5519983564986">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.8.3 1.6.7 2.4a2 2 0 0 1-.5 2.1L8.1 9.5a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.8.4 1.6.6 2.4.7a2 2 0 0 1 1.7 2Z"/>
+              </svg>
+              (19) 98356-4986
+            </a>
+          </div>
+
+          <form class="quote-form" id="quoteForm" novalidate>
+            <div class="field">
+              <label class="field-label" for="qName">Seu nome <span class="opt">(opcional)</span></label>
+              <input type="text" id="qName" name="nome" autocomplete="name" maxlength="60" placeholder="Como posso te chamar?">
+            </div>
+
+            <fieldset>
+              <legend>Do que você precisa?</legend>
+              <div class="chips">
+                <label class="chip">
+                  <input type="radio" name="tipo" value="Serviço elétrico">
+                  <span>Elétrica</span>
+                </label>
+                <label class="chip">
+                  <input type="radio" name="tipo" value="Serviço hidráulico">
+                  <span>Hidráulica</span>
+                </label>
+                <label class="chip">
+                  <input type="radio" name="tipo" value="Elétrica e hidráulica">
+                  <span>Os dois</span>
+                </label>
+                <label class="chip">
+                  <input type="radio" name="tipo" value="Outro tipo de reparo">
+                  <span>Outro</span>
+                </label>
+              </div>
+            </fieldset>
+
+            <div class="field">
+              <label class="field-label" for="qMsg">Descreva o serviço</label>
+              <textarea id="qMsg" name="mensagem" rows="4" maxlength="600" placeholder="Ex.: a tomada da cozinha parou de funcionar e o disjuntor desliga sozinho."></textarea>
+            </div>
+
+            <button class="btn btn-gold btn-submit" type="submit">
+              <svg viewBox="0 0 448 512" fill="currentColor" aria-hidden="true">
+                <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/>
+              </svg>
+              Enviar no WhatsApp
+            </button>
+
+            <p class="form-note">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/>
+              </svg>
+              Você será direcionado ao WhatsApp com a mensagem pronta. Nada é enviado sem a sua confirmação.
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section faq" aria-labelledby="titulo-faq">
+      <div class="container">
+        <div class="faq-layout">
+          <div class="faq-intro reveal">
+            <p class="kicker">Antes de chamar</p>
+            <h2 id="titulo-faq">Dúvidas<br>frequentes</h2>
+            <p>Se a sua não estiver aqui, é só mandar uma mensagem. Respondo pelo WhatsApp.</p>
+            <a class="btn btn-ghost"
+               href="https://wa.me/5519983564986?text=Ol%C3%A1%2C%20Robson!%20Tenho%20uma%20d%C3%BAvida%20sobre%20um%20servi%C3%A7o."
+               target="_blank" rel="noopener noreferrer">
+              Tirar uma dúvida
+            </a>
+          </div>
+
+          <div class="faq-list reveal" style="--delay: 90ms">
+            <details class="faq-item">
+              <summary>O orçamento é cobrado?<span class="faq-plus" aria-hidden="true"></span></summary>
+              <p>Não. Você explica o que precisa pelo WhatsApp e recebe a estimativa de valor e prazo sem compromisso.</p>
+            </details>
+
+            <details class="faq-item">
+              <summary>Atende pequenos reparos?<span class="faq-plus" aria-hidden="true"></span></summary>
+              <p>Sim. Troca de tomada, torneira, chuveiro, luminária, ajustes e outros serviços do dia a dia fazem parte do atendimento.</p>
+            </details>
+
+            <details class="faq-item">
+              <summary>Quais regiões são atendidas?<span class="faq-plus" aria-hidden="true"></span></summary>
+              <p>Atendimento em domicílio em Campinas e região. Na dúvida, envie o seu bairro pelo WhatsApp para confirmar a disponibilidade.</p>
+            </details>
+
+            <details class="faq-item">
+              <summary>Vazamento ou falta de energia: o que fazer?<span class="faq-plus" aria-hidden="true"></span></summary>
+              <p>Chame no WhatsApp e descreva a situação o quanto antes. Se houver disponibilidade na agenda, o atendimento é encaixado no mesmo dia.</p>
+            </details>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-band" aria-labelledby="titulo-cta">
+      <div class="container reveal">
+        <p class="kicker">Pequenos reparos, resolvidos</p>
+        <h2 id="titulo-cta">Não deixe para <em>depois.</em></h2>
+        <p>Mande uma mensagem, conte o que está acontecendo e receba seu orçamento sem compromisso.</p>
+        <div class="cta-actions">
+          <a class="btn btn-gold"
+             href="https://wa.me/5519983564986?text=Ol%C3%A1%2C%20Robson!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20or%C3%A7amento."
+             target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 448 512" fill="currentColor" aria-hidden="true">
+              <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/>
+            </svg>
+            Chamar o Robson
+          </a>
+          <a class="btn btn-ghost" href="#servicos">Rever serviços</a>
+        </div>
+        <a class="cta-phone" href="tel:+5519983564986">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.8.3 1.6.7 2.4a2 2 0 0 1-.5 2.1L8.1 9.5a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.8.4 1.6.6 2.4.7a2 2 0 0 1 1.7 2Z"/>
+          </svg>
+          (19) 98356-4986
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="#topo" aria-label="Robson Silva — voltar ao início">
+            <span class="brand-mark" aria-hidden="true">RS</span>
+            <span class="brand-text">
+              <strong>Robson Silva</strong>
+              <small>Elétrica e Hidráulica</small>
+            </span>
+          </a>
+          <p>Elétrica, hidráulica e pequenos reparos com atendimento próximo, capricho no acabamento e orçamento sem compromisso.</p>
+        </div>
+
+        <nav aria-label="Links do rodapé">
+          <p class="footer-title">Navegue</p>
+          <div class="footer-links">
+            <a href="#servicos">Serviços</a>
+            <a href="#como-funciona">Como funciona</a>
+            <a href="#orcamento">Orçamento</a>
+            <a href="#topo">Início</a>
+          </div>
+        </nav>
+
+        <div>
+          <p class="footer-title">Contato</p>
+          <div class="footer-contact">
+            <a href="https://wa.me/5519983564986?text=Ol%C3%A1%2C%20Robson!%20Vim%20pelo%20site." target="_blank" rel="noopener noreferrer">
+              <strong>WhatsApp (19) 98356-4986</strong>
+            </a>
+            <span>Atendimento em domicílio</span>
+            <span class="small">Campinas e região · SP</span>
+            <div class="footer-actions">
+              <button class="footer-action" type="button" id="saveContact">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="M7 10l5 5 5-5"/><path d="M12 15V3"/>
+                </svg>
+                Salvar contato
+              </button>
+              <button class="footer-action" type="button" id="sharePage">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="m8.6 10.6 6.8-4.2M8.6 13.4l6.8 4.2"/>
+                </svg>
+                Compartilhar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© <span id="year">2026</span> Robson Silva · Elétrica e Hidráulica</span>
+        <span>Site informativo · Orçamentos pelo WhatsApp</span>
+      </div>
+    </div>
+  </footer>
+
+  <a class="wa-float" id="waFloat"
+     href="https://wa.me/5519983564986?text=Ol%C3%A1%2C%20Robson!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20or%C3%A7amento."
+     target="_blank" rel="noopener noreferrer" aria-label="Falar com Robson no WhatsApp">
+    <svg viewBox="0 0 448 512" fill="currentColor" aria-hidden="true">
+      <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/>
+    </svg>
+  </a>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script>
+    document.documentElement.classList.remove('no-js');
+    document.documentElement.classList.add('js');
+
+    (function () {
+      'use strict';
+
+      var WA_NUMBER = '5519983564986';
+      var header = document.querySelector('.site-header');
+      var waFloat = document.getElementById('waFloat');
+      var toast = document.getElementById('toast');
+      var toastTimer;
+
+      function showToast(message) {
+        toast.textContent = message;
+        toast.classList.add('is-visible');
+        clearTimeout(toastTimer);
+        toastTimer = setTimeout(function () {
+          toast.classList.remove('is-visible');
+        }, 2600);
+      }
+
+      // Header + floating button on scroll
+      function onScroll() {
+        var y = window.scrollY || window.pageYOffset;
+        header.classList.toggle('is-scrolled', y > 24);
+        waFloat.classList.toggle('is-visible', y > 480);
+      }
+      window.addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+
+      // Reveal on scroll
+      var revealItems = document.querySelectorAll('.reveal');
+      if ('IntersectionObserver' in window) {
+        var observer = new IntersectionObserver(function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('is-visible');
+              observer.unobserve(entry.target);
+            }
+          });
+        }, { rootMargin: '0px 0px -8% 0px', threshold: 0.12 });
+        revealItems.forEach(function (item) { observer.observe(item); });
+      } else {
+        revealItems.forEach(function (item) { item.classList.add('is-visible'); });
+      }
+
+      // WhatsApp quote form
+      var form = document.getElementById('quoteForm');
+      form.addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        var name = document.getElementById('qName').value.trim();
+        var typeInput = form.querySelector('input[name="tipo"]:checked');
+        var type = typeInput ? typeInput.value : '';
+        var message = document.getElementById('qMsg').value.trim();
+
+        var parts = ['Olá, Robson! Vim pelo site.'];
+        if (name) parts.push('Meu nome é ' + name + '.');
+        if (type) parts.push('Preciso de: ' + type + '.');
+        if (message) parts.push('Detalhes: ' + message);
+        parts.push('Pode me passar um orçamento?');
+
+        var url = 'https://wa.me/' + WA_NUMBER + '?text=' + encodeURIComponent(parts.join('\n'));
+        var opened = window.open(url, '_blank', 'noopener');
+        if (!opened) window.location.href = url;
+      });
+
+      // Save contact (vCard)
+      var saveButton = document.getElementById('saveContact');
+      saveButton.addEventListener('click', function () {
+        var vcard = [
+          'BEGIN:VCARD',
+          'VERSION:3.0',
+          'FN:Robson Silva',
+          'N:Silva;Robson;;;',
+          'ORG:Robson Silva - Elétrica e Hidráulica',
+          'TITLE:Elétrica, Hidráulica e Pequenos Reparos',
+          'TEL;TYPE=CELL,VOICE:+5519983564986',
+          'NOTE:Atendimento em Campinas e região. Orçamento sem compromisso pelo WhatsApp.',
+          'END:VCARD'
+        ].join('\r\n');
+
+        var blob = new Blob([vcard], { type: 'text/vcard;charset=utf-8' });
+        var link = document.createElement('a');
+        link.href = URL.createObjectURL(blob);
+        link.download = 'robson-silva.vcf';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+        setTimeout(function () { URL.revokeObjectURL(link.href); }, 1500);
+        showToast('Contato pronto para salvar na agenda.');
+      });
+
+      // Share page
+      var shareButton = document.getElementById('sharePage');
+      shareButton.addEventListener('click', function () {
+        var shareData = {
+          title: 'Robson Silva — Elétrica e Hidráulica',
+          text: 'Elétrica, hidráulica e pequenos reparos em Campinas e região.',
+          url: window.location.href
+        };
+
+        if (navigator.share) {
+          navigator.share(shareData).catch(function () {});
+          return;
+        }
+
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(window.location.href).then(function () {
+            showToast('Link copiado. É só colar no WhatsApp.');
+          }).catch(function () {
+            showToast('Copie o endereço da página para compartilhar.');
+          });
+        } else {
+          showToast('Copie o endereço da página para compartilhar.');
+        }
+      });
+
+      // Year
+      document.getElementById('year').textContent = new Date().getFullYear();
+    })();
+  </script>
+</body>
+</html>
